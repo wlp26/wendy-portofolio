@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/wendyProfile.png";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import resumePDF from "../assets/resumeWendy.pdf";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -64,6 +65,18 @@ const Hero = () => {
               alt="Profile Picture"
             />
           </div>
+        </div>
+        <div className="flex justify-center w-full">
+          <motion.a
+            href={resumePDF}
+            download="Wendy_Leando_Paath_Resume.pdf"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: -30, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 2.0 }}
+            className="inline-block px-6 py-3 mt-4 text-lg font-semibold text-white-600 border border-white-600 rounded-lg hover:bg-neutral-800 hover:text-white transition"
+          >
+            Download Resume
+          </motion.a>
         </div>
       </div>
     </div>
