@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from "react";
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/wendyProfile.png";
 import { motion } from "framer-motion";
@@ -10,6 +11,29 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const [isInView, setIsInView] = useState(true);
+  const typewriterRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (typewriterRef.current) {
+      observer.observe(typewriterRef.current);
+    }
+
+    return () => {
+      if (typewriterRef.current) {
+        observer.unobserve(typewriterRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="border-b border-neutral-900 pb-12 lg:mb-35">
       <div className="flex flex-wrap">
@@ -24,24 +48,27 @@ const Hero = () => {
               Wendy Leando Paath
             </motion.h1>
             <motion.span
+              ref={typewriterRef}
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
               className="lg:ml-16 text-4xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent"
             >
-              <Typewriter
-                words={[
-                  "Mobile Developer",
-                  "Frontend Developer",
-                  "Backend Developer",
-                  "Full Stack Developer",
-                ]}
-                cursor
-                loop={0}
-                typeSpeed={100}
-                deleteSpeed={70}
-                delaySpeed={2000}
-              />
+              {isInView && (
+                <Typewriter
+                  words={[
+                    "Mobile Developer",
+                    "Frontend Developer",
+                    "Backend Developer",
+                    "Full Stack Developer",
+                  ]}
+                  cursor
+                  loop={0}
+                  typeSpeed={100}
+                  deleteSpeed={70}
+                  delaySpeed={2000}
+                />
+              )}
             </motion.span>
 
             <motion.p
