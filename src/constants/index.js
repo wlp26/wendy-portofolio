@@ -34,6 +34,26 @@ import project5 from "../assets/webCanva1.png";
 import webCanva2 from "../assets/webCanva2.png";
 import webCanva3 from "../assets/webCanva3.png";
 
+import picture20 from "../assets/picture20.png";
+import picture21 from "../assets/Picture21.png";
+import picture22 from "../assets/Picture22.png";
+import picture23 from "../assets/Picture23.png";
+import picture24 from "../assets/Picture24.png";
+import picture25 from "../assets/Picture25.png";
+import picture26 from "../assets/Picture26.png";
+import picture27 from "../assets/Picture27.png";
+import picture28 from "../assets/Picture28.png";
+import picture29 from "../assets/Picture29.png";
+import picture30 from "../assets/Picture30.png";
+import picture31 from "../assets/Picture31.png";
+import picture32 from "../assets/Picture32.png";
+import picture33 from "../assets/Picture33.png";
+import picture34 from "../assets/Picture34.png";
+import picture35 from "../assets/Picture35.png";
+import picture36 from "../assets/Picture36.png";
+import picture37 from "../assets/Picture37.png";
+import picture38 from "../assets/Picture38.png";
+
 export const HERO_CONTENT = `Saya adalah lulusan S1 Teknik Informatika yang memiliki spesialisasi dalam bidang pengembangan aplikasi berbasis Android, IOS dan pengembangan web serta Backend dalam pembuatan REST API. memiliki 2 tahun pengamlaman dakam membangun aplikasi mobile dan website. Saya adalah orang yang pekerja keras, disiplin, jujur, bertanggung jawab, suka mempelajari hal baru, dan mampu bekerja dalam tim.`;
 
 export const ABOUT_TEXT = `Saya adalah seorang full stack developer dan mobile developer lulusan Universitas Kristen Petra Surabaya yang memiliki passion untuk membuat sebuah aplikasi yang efisien dan user-friendly. Dengan pengalaman 2 tahun dalam bidang frontend dan backend, saya telah bekerja dengan berbagai teknologi yaitu Flutter, Laravel, Javascript, React, Vite, Tailwind dan MySQL. Perjalanan saya dalam membangun sebuah aplikasi web dan mobile dimulai dengan rasa ingin tahu yang mendalam terhadap cara kerja, dan telah berkembang menjadi karier di mana saya terus berusaha untuk belajar dan beradaptasi dengan tantangan baru.`;
@@ -103,15 +123,6 @@ export const PROJECTS = [
   },
 
   {
-    title: "Slider Game Android dan IOS",
-    image: [project4, game, game2],
-    width: 300,
-    height: 400,
-    description:
-      "Membuat game puzzle yaitu dimana user harus mengurutkan angka 1-9 yang teracak dalam blok. skor akan tercatat dalam firebase dimana terdapat ranking, yang tertinggi adalah jumlah langkah yang sedikit dengan waktu yang cepat",
-    technologies: ["Kotlin", "Swift", "Firebase"],
-  },
-  {
     title: "Website Editing seperti Canva",
     image: [project5, webCanva2, webCanva3],
     width: 600,
@@ -128,6 +139,45 @@ export const PROJECTS = [
     description:
       "Web portofolio pribadi yang menampilkan projects, skills, and contact information.",
     technologies: ["React", "Vite", "Tailwind", "Framer Motion"],
+  },
+  {
+    title: "Slider Game Android dan IOS",
+    image: [project4, game, game2],
+    width: 300,
+    height: 400,
+    description:
+      "Membuat game puzzle yaitu dimana user harus mengurutkan angka 1-9 yang teracak dalam blok. skor akan tercatat dalam firebase dimana terdapat ranking, yang tertinggi adalah jumlah langkah yang sedikit dengan waktu yang cepat",
+    technologies: ["Kotlin", "Swift", "Firebase"],
+  },
+
+  {
+    title: "Aplikasi Ekspedisi Cold Storage",
+    image: [
+      picture20,
+      picture21,
+      picture22,
+      picture23,
+      picture24,
+      picture25,
+      picture26,
+      picture27,
+      picture28,
+      picture29,
+      picture30,
+      picture31,
+      picture32,
+      picture33,
+      picture34,
+      picture35,
+      picture36,
+      picture37,
+      picture38,
+    ],
+    width: 300,
+    height: 400,
+    description:
+      "Aplikasi Ekspedisi untuk perusahaan cold storage dimana dalam aplikasi ini dibuatkan beberapa fitur utama yaitu List jadwal pengantaran barang, Distribusi, Tracking lokasi driver ekspedisi dan Konfirmasi jika barang telah sampai ditujuan",
+    technologies: ["Flutter", "Dart"],
   },
 ];
 
