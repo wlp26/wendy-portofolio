@@ -230,7 +230,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Jalan siwalankerto permai 4, blok j13, Surabaya, Jawa Timur ",
+  address: "Jalan siwalankerto permai 1, blok d2, Surabaya, Jawa Timur ",
   phoneNo: "+6281241015899 (WA) ",
   email: "leandopaath26@gmail.com",
 };
