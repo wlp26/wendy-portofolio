@@ -54,11 +54,34 @@ import picture36 from "../assets/Picture36.png";
 import picture37 from "../assets/Picture37.png";
 import picture38 from "../assets/Picture38.png";
 
+import wisdom1 from "../assets/wisdom1.jpg";
+import wisdom2 from "../assets/wisdom2.jpg";
+import wisdom3 from "../assets/wisdom3.jpg";
+import wisdom4 from "../assets/wisdom4.jpg";
+import wisdom5 from "../assets/wisdom5.jpg";
+import wisdom6 from "../assets/wisdom6.jpg";
+import wisdom7 from "../assets/wisdom7.jpg";
+import wisdom8 from "../assets/wisdom8.jpg";
+import wisdom11 from "../assets/wisdom11.jpg";
+import wisdom22 from "../assets/wisdom22.jpg";
+import wisdom33 from "../assets/wisdom33.jpg";
+import wisdom44 from "../assets/wisdom44.jpg";
+import wisdom55 from "../assets/wisdom55.jpg";
+import wisdom66 from "../assets/wisdom66.jpg";
+import wisdom77 from "../assets/wisdom77.jpg";
+
 export const HERO_CONTENT = `Saya adalah lulusan S1 Teknik Informatika yang memiliki spesialisasi dalam bidang pengembangan aplikasi berbasis Android, IOS dan pengembangan web serta Backend dalam pembuatan REST API. memiliki 2 tahun pengamlaman dakam membangun aplikasi mobile dan website. Saya adalah orang yang pekerja keras, disiplin, jujur, bertanggung jawab, suka mempelajari hal baru, dan mampu bekerja dalam tim.`;
 
 export const ABOUT_TEXT = `Saya adalah seorang full stack developer dan mobile developer lulusan Universitas Kristen Petra Surabaya yang memiliki passion untuk membuat sebuah aplikasi yang efisien dan user-friendly. Dengan pengalaman 2 tahun dalam bidang frontend dan backend, saya telah bekerja dengan berbagai teknologi yaitu Flutter, Laravel, Javascript, React, Vite, Tailwind dan MySQL. Perjalanan saya dalam membangun sebuah aplikasi web dan mobile dimulai dengan rasa ingin tahu yang mendalam terhadap cara kerja, dan telah berkembang menjadi karier di mana saya terus berusaha untuk belajar dan beradaptasi dengan tantangan baru.`;
 
 export const EXPERIENCES = [
+  {
+    year: "September 2024 - Sekarang",
+    role: "Mobile Frontend Developer",
+    company: "WisdomPOS",
+    description: `Membuat aplikasi POS (point of sales) untuk beberapa restoran, aplikasi ini dirancang khusus untuk memenuhi kebutuhan operasional restoran, mulai dari pemesanan makanan, pembayaran, hingga report. Tugas utama saya yaitu membuat tampilan (frontend) user interface yang sesuai dengan design yang telah di buatkan di figma. Aplikasi dibuat dengan framework flutter dan state management BloC`,
+    technologies: ["Flutter"],
+  },
   {
     year: "Juni 2023 - Desember 2023",
     role: "Mobile Frontend Developer",
@@ -76,6 +99,31 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Aplikasi POS Mobile untuk Restoran (WisdomPOS)",
+    image: [
+      wisdom1,
+      wisdom2,
+      wisdom3,
+      wisdom4,
+      wisdom5,
+      wisdom6,
+      wisdom7,
+      wisdom8,
+      wisdom11,
+      wisdom22,
+      wisdom33,
+      wisdom44,
+      wisdom55,
+      wisdom66,
+      wisdom77,
+    ],
+    width: 150,
+    height: 150,
+    description:
+      "Aplikasi POS (point of sales) mobile yang dirancang khusus untuk memenuhi kebutuhan operasional restoran, mulai dari pemesanan makanan, pembayaran, hingga report. Aplikasi ini dibuat dengan framework flutter dan state management BloC. aplikasi ini memiliki fitur utama seperti manajemen meja, pemesanan makanan, pembayaran, laporan penjualan, dan lain sebagainya. lalu untuk responsive design aplikasi ini dapat digunakan pada berbagai ukuran layar perangkat mobile, tablet dan desktop.",
+    technologies: ["Flutter", "Dart", "Bloc", "State management"],
+  },
   {
     title: "Aplikasi E-Commerce toko Wendy",
     image: [
@@ -96,7 +144,7 @@ export const PROJECTS = [
     height: 150,
     description:
       "Aplikasi mobile e-commerce yang memiliki fitur seperti daftar produk, detail produk, keranjang belanja, user authentication, detail transaksi, payment gateway, histori transaksi, forgot password, menerima notifikasi dan lain sebagainya .",
-    technologies: ["Flutter", "Dart", "Midtrans", "FCM"],
+    technologies: ["Flutter", "Dart", "Bloc", "State management"],
   },
   {
     title: "Website Admin dan backend toko Wendy",
