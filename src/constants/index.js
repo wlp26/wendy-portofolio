@@ -82,19 +82,20 @@ export const EXPERIENCES = [
     description: `Membuat aplikasi POS (point of sales) untuk beberapa restoran, aplikasi ini dirancang khusus untuk memenuhi kebutuhan operasional restoran, mulai dari pemesanan makanan, pembayaran, hingga report. Tugas utama saya yaitu membuat tampilan (frontend) user interface yang sesuai dengan design yang telah di buatkan di figma. Aplikasi dibuat dengan framework flutter dan state management BloC`,
     technologies: ["Flutter"],
   },
-  {
-    year: "Juni 2023 - Desember 2023",
-    role: "Mobile Frontend Developer",
-    company: "Cross Network Indonesia. (Magang)",
-    description: `Membuat dan mengembangkan User Interface untuk aplikasi mobile berbasis android dengan menggunakan flutter. Bekerja sama dengan backend developer untuk mengintegrasikan komponen frontend dengan REST API.`,
-    technologies: ["Flutter"],
-  },
+
   {
     year: "Januari 2024 - Juni 2024",
     role: "Full Stack Developer",
     company: "Toko Wendy Girian",
     description: `Membuat dan mengembangkan aplikasi mobile e-commerce dan website admin untuk toko wendy girian dengan menggunakan laravel dan flutter sebagai framework dan database menggunakan MySQL. Mendesain dan mengimplementasi REST API untuk komunikasi data, menintegrasikan payment gateway menggunakan midtrans dan push notification menggunkana FCM (firebase cloud messaging).`,
     technologies: ["Laravel", "Flutter", "Midtrans", "mySQL", "FCM"],
+  },
+  {
+    year: "Juni 2023 - Desember 2023",
+    role: "Mobile Frontend Developer",
+    company: "Cross Network Indonesia. (Magang)",
+    description: `Membuat dan mengembangkan User Interface untuk aplikasi mobile berbasis android dengan menggunakan flutter. Bekerja sama dengan backend developer untuk mengintegrasikan komponen frontend dengan REST API.`,
+    technologies: ["Flutter"],
   },
 ];
 
