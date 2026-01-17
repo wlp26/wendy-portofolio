@@ -80,7 +80,7 @@ export const EXPERIENCES = [
     role: "Mobile Frontend Developer",
     company: "WisdomPOS",
     description: `Membuat aplikasi POS (point of sales) untuk beberapa restoran, aplikasi ini dirancang khusus untuk memenuhi kebutuhan operasional restoran, mulai dari pemesanan makanan, pembayaran, hingga report. Tugas utama saya yaitu membuat tampilan (frontend) user interface yang sesuai dengan design yang telah di buatkan di figma. Aplikasi dibuat dengan framework flutter dan state management BloC`,
-    technologies: ["Flutter"],
+    technologies: ["Flutter", "Dart", "Bloc", "State management"],
   },
 
   {
